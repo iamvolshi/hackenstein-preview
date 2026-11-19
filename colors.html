@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hackenstein — New colors proof shots</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #0c0e13; color: #f3f4f6;
+    font-family: Geist, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  header { max-width: 1440px; margin: 0 auto; padding: 48px 24px 8px; }
+  h1 {
+    font-family: "Space Grotesk", Geist, sans-serif;
+    font-size: 32px; letter-spacing: .04em; margin: 0 0 12px;
+  }
+  header p { color: #9ca3af; font-size: 15px; line-height: 1.6; max-width: 900px; margin: 0 0 12px; }
+  header p b { color: #f3f4f6; }
+  header a { color: #67e8f9; }
+  main { max-width: 1440px; margin: 0 auto; padding: 24px; }
+  figure { margin: 0 0 64px; }
+  figure a { display: block; }
+  figure img {
+    display: block; width: 100%; max-width: 1440px; height: auto;
+    border: 1px solid rgba(255,255,255,.08); border-radius: 12px;
+  }
+  figcaption { margin-top: 12px; }
+  figcaption h2 {
+    font-family: "Space Grotesk", Geist, sans-serif;
+    font-size: 20px; letter-spacing: .04em; margin: 0 0 4px;
+  }
+  figcaption p { color: #9ca3af; font-size: 14px; line-height: 1.6; margin: 0; }
+  footer { max-width: 1440px; margin: 0 auto; padding: 0 24px 48px; color: #6b7280; font-size: 13px; line-height: 1.6; }
+  footer a { color: #67e8f9; }
+</style>
+</head>
+<body>
+<header>
+  <h1>HACKENSTEIN — NEW COLORS, PROOF SHOTS</h1>
+  <p><b>Click any shot to open it at full size.</b> Two color changes on
+  <code>main</code>: Young Frankenstein's voice accent is the creature's
+  grey-green skin, and the KTIE engine box is vibrant rose. The Movie reply
+  in the second shot is a real live turn through the connector, not a stub.
+  Type in these shots is a fallback — Google Fonts is unreachable from the
+  machine that took them — so the colors and the layout are exact and the
+  type is not.</p>
+  <p><a href="index.html">&larr; Back to the UI restart shots</a> &middot;
+  <a href="engine-boxes.html">Engine boxes shots</a></p>
+</header>
+<main>
+  <figure>
+    <a href="colors/yf-skin-green.png"><img src="colors/yf-skin-green.png" alt="Young Frankenstein picked, grey-green skin accent"></a>
+    <figcaption><h2>01 — YOUNG FRANKENSTEIN, GREY-GREEN SKIN</h2>
+    <p>The [YOUNG FRANKENSTEIN] 1974 chip picked, in the grey-green skin tone (#8a9a7b); composer reads "Message Young Frankenstein". The band below shows "Not configured" in the error pink by design — Young Frankenstein has no model on the live connector yet, and the error state overrides the band. The skin-green band appears once its model is set.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="colors/ktie-rose.png"><img src="colors/ktie-rose.png" alt="KTIE box solid rose on a Movie reply"></a>
+    <figcaption><h2>02 — KTIE, VIBRANT ROSE</h2>
+    <p>A real Movie turn ("Hello, creature." — live GLM reply). The KTIE box on the reply is clicked: solid vibrant rose (#ff5c8a) with black letters, ERIE amber and ELLE dark below it. The terminal shows "KTIE — THIS TURN / KATIE recorded 2 entries for this turn." The Movie band at the bottom is amber.</p></figcaption>
+  </figure>
+</main>
+<footer>
+  <p>Main <code>d4c2fce</code>, verified: 419 tests pass. Young Frankenstein:
+  <code>--skin #8a9a7b</code>, <code>--skin-bg #232b20</code>,
+  <code>--skin-text #b9c7ab</code>. KTIE:
+  <code>--rose #ff5c8a</code>, <code>--engine-katie: var(--rose)</code>.
+  The grey-green stays clear of ELLE's mint green.</p>
+</footer>
+</body>
+</html>
