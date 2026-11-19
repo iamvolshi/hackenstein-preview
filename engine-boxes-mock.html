@@ -86,13 +86,51 @@
     color: #6b7280;
     white-space: nowrap;
   }
-  .engine-box.lit { border-color: #00f0ff; color: #00f0ff; }
+  .engine-box.lit.ktie { border-color: #00f0ff; color: #00f0ff; }
+  .engine-box.lit.erie { border-color: #ffbd58; color: #ffbd58; }
+  .engine-box.lit.elle { border-color: #3ddc97; color: #3ddc97; }
+  .key { display: flex; gap: 16px; flex-wrap: wrap; margin: 0 0 8px; }
+  .key span {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+  .key .ktie { color: #00f0ff; }
+  .key .erie { color: #ffbd58; }
+  .key .elle { color: #3ddc97; }
+  .feed { display: grid; gap: 6px; }
+  .feed-item {
+    padding: 8px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: #1e1f25;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+  .feed-item .engine-tag {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 0 4px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+  .feed-item[data-engine='KTIE'] > .engine-tag { color: #00f0ff; }
+  .feed-item[data-engine='ERIE'] > .engine-tag { color: #ffbd58; }
+  .feed-item[data-engine='ELLE'] > .engine-tag { color: #3ddc97; }
 </style>
 </head>
 <body>
 <div class="page">
   <h1>Engine boxes — mock</h1>
-  <p class="note">Three small boxes down the side of a reply. <strong>Lit</strong> when that engine worked the turn, <strong>dark</strong> when it sat out. Static mock, not the app — every word except the reply is a stand-in.</p>
+  <p class="note">Three small boxes down the right side of a reply. <strong>Lit</strong> when that engine worked the turn, <strong>dark</strong> when it sat out. Each engine has its own color, and everything that belongs to it takes that color. Static mock, not the app — every word except the reply is a stand-in.</p>
+  <p class="key"><span class="ktie">KTIE — CYAN</span><span class="erie">ERIE — AMBER</span><span class="elle">ELLE — GREEN</span></p>
 
   <h2>A — Right side, all three lit</h2>
   <div class="mock">
@@ -103,9 +141,9 @@
         <p>Stub reply. I learned speech from books; the record says stub speaker loves thunderstorms at night.</p>
       </div>
       <div class="engine-boxes">
-        <span class="engine-box lit">KTIE</span>
-        <span class="engine-box lit">ERIE</span>
-        <span class="engine-box lit">ELLE</span>
+        <span class="engine-box lit ktie">KTIE</span>
+        <span class="engine-box lit erie">ERIE</span>
+        <span class="engine-box lit elle">ELLE</span>
       </div>
     </div>
   </div>
@@ -119,26 +157,19 @@
         <p>Stub reply. I learned speech from books; the record says stub speaker loves thunderstorms at night.</p>
       </div>
       <div class="engine-boxes">
-        <span class="engine-box lit">KTIE</span>
-        <span class="engine-box lit">ERIE</span>
-        <span class="engine-box">ELLE</span>
+        <span class="engine-box lit ktie">KTIE</span>
+        <span class="engine-box lit erie">ERIE</span>
+        <span class="engine-box elle">ELLE</span>
       </div>
     </div>
   </div>
 
-  <h2>C — Left side, all three lit</h2>
+  <h2>The same colors everywhere — telemetry takes them too</h2>
   <div class="mock">
-    <div class="bubble-user">What do you know about me?</div>
-    <div class="reply-row">
-      <div class="engine-boxes">
-        <span class="engine-box lit">KTIE</span>
-        <span class="engine-box lit">ERIE</span>
-        <span class="engine-box lit">ELLE</span>
-      </div>
-      <div class="bubble-reply">
-        <p class="bubble-name">Frankenstein — Book</p>
-        <p>Stub reply. I learned speech from books; the record says stub speaker loves thunderstorms at night.</p>
-      </div>
+    <div class="feed">
+      <div class="feed-item" data-engine="KTIE"><span class="engine-tag">KTIE</span>Recorded 2 entries</div>
+      <div class="feed-item" data-engine="ERIE"><span class="engine-tag">ERIE</span>Retrieved 1 source</div>
+      <div class="feed-item" data-engine="ELLE"><span class="engine-tag">ELLE</span>Learned 1 lesson</div>
     </div>
   </div>
 </div>
