@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hackenstein — Engine boxes proof shots</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #0c0e13; color: #f3f4f6;
+    font-family: Geist, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  header { max-width: 1440px; margin: 0 auto; padding: 48px 24px 8px; }
+  h1 {
+    font-family: "Space Grotesk", Geist, sans-serif;
+    font-size: 32px; letter-spacing: .04em; margin: 0 0 12px;
+  }
+  header p { color: #9ca3af; font-size: 15px; line-height: 1.6; max-width: 900px; margin: 0 0 12px; }
+  header p b { color: #f3f4f6; }
+  header a { color: #67e8f9; }
+  main { max-width: 1440px; margin: 0 auto; padding: 24px; }
+  figure { margin: 0 0 64px; }
+  figure a { display: block; }
+  figure img {
+    display: block; width: 100%; max-width: 1440px; height: auto;
+    border: 1px solid rgba(255,255,255,.08); border-radius: 12px;
+  }
+  figcaption { margin-top: 12px; }
+  figcaption h2 {
+    font-family: "Space Grotesk", Geist, sans-serif;
+    font-size: 20px; letter-spacing: .04em; margin: 0 0 4px;
+  }
+  figcaption p { color: #9ca3af; font-size: 14px; line-height: 1.6; margin: 0; }
+  footer { max-width: 1440px; margin: 0 auto; padding: 0 24px 48px; color: #6b7280; font-size: 13px; line-height: 1.6; }
+  footer a { color: #67e8f9; }
+</style>
+</head>
+<body>
+<header>
+  <h1>HACKENSTEIN — ENGINE BOXES, PROOF SHOTS</h1>
+  <p><b>Click any shot to open it at full size.</b> These are screenshots of the
+  engine-boxes round on the <code>feat/engine-boxes</code> branch, 1440&times;900 each.
+  The proof card is gone — three small boxes (KTIE / ERIE / ELLE) sit down the
+  right side of a reply, lit when that engine worked the turn, dark when it sat
+  out. Clicking a box swaps the right column to that engine's detail for the turn.</p>
+  <p>They run on a <b>stub connector</b>: every reply, name, number and lesson
+  in them is a stand-in. The layout, the colors, the boxes and the terminal are
+  real; the words are not.</p>
+  <p><a href="index.html">&larr; Back to the UI restart shots</a> &middot;
+  <a href="engine-boxes-mock.html">Engine boxes mock</a></p>
+</header>
+<main>
+  <figure>
+    <a href="engine-boxes/01-boot.png"><img src="engine-boxes/01-boot.png" alt="Boot, before a pick"></a>
+    <figcaption><h2>01 — BOOT, BEFORE A PICK</h2>
+    <p>Empty center, three voice chips, locked composer. The terminal shows the NOT KNOWN empty state, and the window controls sit in its heading row.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="engine-boxes/02-boxes-lit-and-elle-dark.png"><img src="engine-boxes/02-boxes-lit-and-elle-dark.png" alt="Boxes lit, and ELLE dark on one turn"></a>
+    <figcaption><h2>02 — BOXES LIT, AND ELLE DARK</h2>
+    <p>Three replies. First and third: all three boxes lit. Second (Movie): KTIE cyan and ERIE amber lit, ELLE dark — it sat that turn out. The right column is the terminal: mono lines, oldest first, newest at the bottom.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="engine-boxes/03-ktie-this-turn.png"><img src="engine-boxes/03-ktie-this-turn.png" alt="KTIE detail for this turn"></a>
+    <figcaption><h2>03 — KTIE, THIS TURN</h2>
+    <p>The KTIE box clicked: the right column shows only KTIE's events for that turn — "KTIE recorded 2 entries for this turn" — with the back link to all activity. The chat never moves.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="engine-boxes/04-erie-this-turn.png"><img src="engine-boxes/04-erie-this-turn.png" alt="ERIE detail for this turn"></a>
+    <figcaption><h2>04 — ERIE, THIS TURN</h2>
+    <p>The ERIE box clicked: ERIE's events for the turn, with its sources, in amber.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="engine-boxes/05-elle-this-turn.png"><img src="engine-boxes/05-elle-this-turn.png" alt="ELLE detail for this turn"></a>
+    <figcaption><h2>05 — ELLE, THIS TURN</h2>
+    <p>The ELLE box clicked: ELLE's events for the turn — the promoted lesson and the lesson used in the reply — in green.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="engine-boxes/06-elle-dark-did-nothing.png"><img src="engine-boxes/06-elle-dark-did-nothing.png" alt="Dark ELLE box, did nothing"></a>
+    <figcaption><h2>06 — A DARK BOX, IN WORDS</h2>
+    <p>The dark ELLE box on the Movie turn clicked: "ELLE did nothing on this turn." One line, no empty-state box.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="engine-boxes/07-terminal-feed-several-turns.png"><img src="engine-boxes/07-terminal-feed-several-turns.png" alt="Terminal feed with several turns"></a>
+    <figcaption><h2>07 — THE TERMINAL, SEVERAL TURNS</h2>
+    <p>All three engines' activity as terminal lines, each in its own color, oldest first. No cards, no borders — color is the only distinction.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="engine-boxes/08-terminal-dragged-wide.png"><img src="engine-boxes/08-terminal-dragged-wide.png" alt="Terminal dragged wide"></a>
+    <figcaption><h2>08 — TERMINAL DRAGGED WIDE</h2>
+    <p>A real mouse drag pulled the terminal to its 36rem limit. The chat column gives up the space; the feed lines wrap to the new width.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="engine-boxes/09-terminal-minimized.png"><img src="engine-boxes/09-terminal-minimized.png" alt="Terminal minimized to a strip"></a>
+    <figcaption><h2>09 — MINIMIZED</h2>
+    <p>The terminal collapsed to a slim strip at the right edge: a vertical TERMINAL label and the restore control. The chat takes the freed space.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="engine-boxes/10-terminal-maximized.png"><img src="engine-boxes/10-terminal-maximized.png" alt="Terminal maximized"></a>
+    <figcaption><h2>10 — MAXIMIZED</h2>
+    <p>Full size: the terminal fills the whole row, the left panel and the chat hidden but still mounted. The restore control sits at the top right.</p></figcaption>
+  </figure>
+</main>
+<footer>
+  <p>Branch <code>feat/engine-boxes</code> (head <code>3877faa</code>), verified: 417 tests pass.
+  Shots are byte-identical copies from <code>docs/engine-boxes-proof/</code> on the branch.</p>
+</footer>
+</body>
+</html>
