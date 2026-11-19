@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hackenstein — UI restart proof shots</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #0c0e13; color: #f3f4f6;
+    font-family: Geist, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  header { max-width: 1440px; margin: 0 auto; padding: 48px 24px 8px; }
+  h1 {
+    font-family: "Space Grotesk", Geist, sans-serif;
+    font-size: 32px; letter-spacing: .04em; margin: 0 0 12px;
+  }
+  header p { color: #9ca3af; font-size: 15px; line-height: 1.6; max-width: 900px; margin: 0 0 12px; }
+  header p b { color: #f3f4f6; }
+  main { max-width: 1440px; margin: 0 auto; padding: 24px; }
+  figure { margin: 0 0 64px; }
+  figure a { display: block; }
+  figure img {
+    display: block; width: 100%; max-width: 1440px; height: auto;
+    border: 1px solid rgba(255,255,255,.08); border-radius: 12px;
+  }
+  figcaption { margin-top: 12px; }
+  figcaption h2 {
+    font-family: "Space Grotesk", Geist, sans-serif;
+    font-size: 20px; letter-spacing: .04em; margin: 0 0 4px;
+  }
+  figcaption p { color: #9ca3af; font-size: 14px; line-height: 1.6; margin: 0; }
+  footer { max-width: 1440px; margin: 0 auto; padding: 0 24px 48px; color: #6b7280; font-size: 13px; line-height: 1.6; }
+  footer a { color: #67e8f9; }
+</style>
+</head>
+<body>
+<header>
+  <h1>HACKENSTEIN — UI RESTART, PROOF SHOTS</h1>
+  <p><b>Click any shot to open it at full size.</b> These are screenshots of the
+  new face on the <code>feat/ui-restart</code> branch, 1440&times;900 each.</p>
+  <p>They run on a <b>stub connector</b>: every reply, name, number and lesson
+  in them is a stand-in. The layout, the colors, the chips and the panels are
+  real; the words are not. The third chip (Young Frankenstein) appears once
+  the bots part lands — the live connector reports Book and Movie only right
+  now.</p>
+</header>
+<main>
+  <figure>
+    <a href="01-boot-pre-pick.png"><img src="01-boot-pre-pick.png" alt="Boot, before a pick"></a>
+    <figcaption><h2>01 — BOOT, BEFORE A PICK</h2>
+    <p>Empty center, three voice chips, locked composer. No greeting, no cards, no NOT KNOWN panel.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="02-movie-talking.png"><img src="02-movie-talking.png" alt="Movie talking"></a>
+    <figcaption><h2>02 — MOVIE TALKING</h2>
+    <p>Amber everywhere: the picked chip, the reply edge, the model band. The right column shows ELLE's lesson and KATIE's recording.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="03-book-proof-card.png"><img src="03-book-proof-card.png" alt="Book with a proof card"></a>
+    <figcaption><h2>03 — BOOK, WITH A PROOF CARD</h2>
+    <p>Violet. The lesson text inside the reply is a link to the record, and the proof card opens the entry.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="04-young-frankenstein-unconfigured.png"><img src="04-young-frankenstein-unconfigured.png" alt="Young Frankenstein unconfigured"></a>
+    <figcaption><h2>04 — YOUNG FRANKENSTEIN, UNCONFIGURED</h2>
+    <p>Cyan. The chip is picked, the composer unlocks, and the band says in plain words that no model is set yet.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="05-rail-lessons.png"><img src="05-rail-lessons.png" alt="Rail: Lessons"></a>
+    <figcaption><h2>05 — RAIL: LESSONS</h2>
+    <p>The bulb icon swaps the list panel to ELLE's lessons. The chat does not move.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="06-rail-audit.png"><img src="06-rail-audit.png" alt="Rail: Audit"></a>
+    <figcaption><h2>06 — RAIL: AUDIT</h2>
+    <p>The ledger icon swaps the list panel to the record views and the live entry count.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="07-rail-research.png"><img src="07-rail-research.png" alt="Rail: Research"></a>
+    <figcaption><h2>07 — RAIL: RESEARCH</h2>
+    <p>The magnifier icon swaps the list panel to a search over the knowledge, each hit with its source.</p></figcaption>
+  </figure>
+  <figure>
+    <a href="08-actions-view.png"><img src="08-actions-view.png" alt="Action List"></a>
+    <figcaption><h2>08 — ACTION LIST</h2>
+    <p>A record view on the new tokens: filters, entries, authority, inspect.</p></figcaption>
+  </figure>
+</main>
+<footer>
+  <p>From the Kiroween entry: the Hackenstein app, branch
+  <code>feat/ui-restart</code> in
+  <a href="https://github.com/iamvolshi/kiroween-trifecta">iamvolshi/kiroween-trifecta</a>.
+  Shots live in <code>docs/ui-restart-proof/</code> on that branch.</p>
+</footer>
+</body>
+</html>
