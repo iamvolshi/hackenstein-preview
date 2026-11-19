@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hackenstein — engine boxes mock</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #111318;
+    color: #f3f4f6;
+    font-family: Geist, system-ui, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .page { max-width: 768px; margin: 0 auto; padding: 32px 24px 64px; }
+  h1 {
+    margin: 0 0 8px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .note { margin: 0 0 32px; color: #9ca3af; }
+  .note strong { color: #f3f4f6; }
+  h2 {
+    margin: 40px 0 12px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #9ca3af;
+  }
+  .mock {
+    border: 1px solid rgba(255,255,255,0.08);
+    background: #1a1b21;
+    padding: 24px;
+  }
+  .bubble-user {
+    max-width: 85%;
+    margin: 0 0 12px auto;
+    padding: 12px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    background: #282a2f;
+  }
+  .reply-row { display: flex; gap: 8px; align-items: flex-start; }
+  .bubble-reply {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-left: 3px solid #eacfff;
+    border-radius: 8px;
+    background: #1e1f25;
+  }
+  .bubble-name {
+    margin: 0 0 2px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #eacfff;
+  }
+  .bubble-reply p { margin: 0; }
+  .engine-boxes { display: grid; gap: 4px; padding-top: 2px; }
+  .engine-box {
+    padding: 3px 8px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 4px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #6b7280;
+    white-space: nowrap;
+  }
+  .engine-box.lit { border-color: #00f0ff; color: #00f0ff; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Engine boxes — mock</h1>
+  <p class="note">Three small boxes down the side of a reply. <strong>Lit</strong> when that engine worked the turn, <strong>dark</strong> when it sat out. Static mock, not the app — every word except the reply is a stand-in.</p>
+
+  <h2>A — Right side, all three lit</h2>
+  <div class="mock">
+    <div class="bubble-user">What do you know about me?</div>
+    <div class="reply-row">
+      <div class="bubble-reply">
+        <p class="bubble-name">Frankenstein — Book</p>
+        <p>Stub reply. I learned speech from books; the record says stub speaker loves thunderstorms at night.</p>
+      </div>
+      <div class="engine-boxes">
+        <span class="engine-box lit">KTIE</span>
+        <span class="engine-box lit">ERIE</span>
+        <span class="engine-box lit">ELLE</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>B — Right side, ELLE sat this one out</h2>
+  <div class="mock">
+    <div class="bubble-user">What do you know about me?</div>
+    <div class="reply-row">
+      <div class="bubble-reply">
+        <p class="bubble-name">Frankenstein — Book</p>
+        <p>Stub reply. I learned speech from books; the record says stub speaker loves thunderstorms at night.</p>
+      </div>
+      <div class="engine-boxes">
+        <span class="engine-box lit">KTIE</span>
+        <span class="engine-box lit">ERIE</span>
+        <span class="engine-box">ELLE</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>C — Left side, all three lit</h2>
+  <div class="mock">
+    <div class="bubble-user">What do you know about me?</div>
+    <div class="reply-row">
+      <div class="engine-boxes">
+        <span class="engine-box lit">KTIE</span>
+        <span class="engine-box lit">ERIE</span>
+        <span class="engine-box lit">ELLE</span>
+      </div>
+      <div class="bubble-reply">
+        <p class="bubble-name">Frankenstein — Book</p>
+        <p>Stub reply. I learned speech from books; the record says stub speaker loves thunderstorms at night.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
