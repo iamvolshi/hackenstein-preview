@@ -42,9 +42,9 @@
   <p><b>Click any shot to open it at full size.</b> These are screenshots of the
   KATIE page on the <code>feat/katie-page</code> branch, 1920&times;1080 each
   (02 is a header crop) — Darren's screen size, so they fill his screen.
-  The page fits one screen at 1920&times;1080 with no scrolling on the
-  landing month and the day. Tapping Audit opens the KTIE page: KTIE in
-  rose over "Knowledge Time Indexing Engine", and the time tree as five
+  The page fits one screen at 1920&times;1080 with no scrolling anywhere —
+  when a folder's content is taller than the screen it scrolls inside its
+  own box. Tapping Audit opens the KTIE page: KTIE in rose over "Knowledge Time Indexing Engine", and the time tree as five
   drums — Years, Quarters, Weeks, Days, Hours — with the folder underneath.
   The centered value is solid rose, the others fade and tip back like a
   drum. Scroll over a wheel and it spins; the wheels to its right follow.
@@ -92,17 +92,17 @@
   <figure>
     <a href="katie-page/07-hours-spinning-folder-holds.png"><img src="katie-page/07-hours-spinning-folder-holds.png" alt="Hours spinning, folder holds"></a>
     <figcaption><h2>07 — HOURS SPINNING, FOLDER HOLDS</h2>
-    <p>Mid-spin: the rose passing line names the moment going by ("2026-03-03 · 11:00 UTC · 0 entries") while the folder still shows the 13:00 hour view it had before.</p></figcaption>
+    <p>Mid-spin: the rose passing line names the moment going by ("2026-03-03 · 11:00 UTC · 0 entries") while the folder still shows the 13:00 hour view it had before, inside its own box — the page doesn't move.</p></figcaption>
   </figure>
   <figure>
     <a href="katie-page/08-deep-selection-folder-settled.png"><img src="katie-page/08-deep-selection-folder-settled.png" alt="Deep selection, folder settled"></a>
     <figcaption><h2>08 — DEEP SELECTION, FOLDER SETTLED</h2>
-    <p>The same moment after the wheels settle: the passing line is gone, the caption reads "FOLDER: 2026-03-03 · 11:00 UTC · 0 ENTRIES", and the folder is the 11:00 hour view.</p></figcaption>
+    <p>The same moment after the wheels settle: the passing line is gone, the caption reads "FOLDER: 2026-03-03 · 11:00 UTC · 0 ENTRIES", and the folder is the 11:00 hour view. The folder is its own scrolling box — the tables scroll inside it, the page never scrolls.</p></figcaption>
   </figure>
   <figure>
     <a href="katie-page/09-folder-under-the-settled-drums.png"><img src="katie-page/09-folder-under-the-settled-drums.png" alt="Folder under the settled drums"></a>
     <figcaption><h2>09 — FOLDER UNDER THE SETTLED DRUMS</h2>
-    <p>Scrolled down: the settled drums on top, the folder underneath — what the agent did that hour (honestly empty: nothing was recorded) and what it believed at that moment.</p></figcaption>
+    <p>The folder scrolled inside its own box: the drums and the caption stay put while the believed table moves inside the box. The page never scrolls — the box does.</p></figcaption>
   </figure>
   <figure>
     <a href="katie-page/10-hour-view-with-drums-above.png"><img src="katie-page/10-hour-view-with-drums-above.png" alt="Hour view with drums above"></a>
@@ -116,12 +116,12 @@
   </figure>
 </main>
 <footer>
-  <p>Branch <code>feat/katie-page</code> @ <code>d914252</code> (435 tests pass).
+  <p>Branch <code>feat/katie-page</code> @ <code>7dcf223</code> (436 tests pass).
   Verified independently; not merged. The helper line is gone entirely — no
-  teaching, the drums are the navigation. The landing month and the day fit
-  one screen at 1920&times;1080 with no scrolling. The hour view's tables
-  still scroll (2,782px over in the stub record at this size) — that shape
-  is Darren's call, pending. A different title comes later. <a href="index.html">&larr; Back to the UI restart shots</a></p>
+  teaching, the drums are the navigation. The page never scrolls: the
+  landing month and the day fit one screen, and the hour view's tables
+  scroll inside their own box. That was Darren's call — no page scroll,
+  the box scrolls instead. A different title comes later. <a href="index.html">&larr; Back to the UI restart shots</a></p>
 </footer>
 </body>
 </html>
